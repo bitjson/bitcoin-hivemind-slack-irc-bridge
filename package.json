@@ -1,0 +1,17 @@
+{
+  "name": "drivechain-dev-slack-irc-bridge",
+  "version": "1.0.0",
+  "description": "IRC bridge for #drivechain-dev to the Bitcoin Hivemind slack group.",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start --name bridge index.js",
+    "stop": "pm2 stop bridge",
+    "debug": "NODE_ENV=development node start index.js"
+  },
+  "author": "Jason Dreyzehner",
+  "license": "MIT",
+  "dependencies": {
+    "slack-irc": "^3.11.1"
+  },
+  "private": true
+}
